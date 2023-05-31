@@ -1,0 +1,64 @@
+/* section 1 footer */
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.footer-card svg {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  fill: #d3a268;
+}
+.footer-card h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1rem;
+}
+.footer-card p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  color: #858585;
+  text-align: center;
+  line-height: 2rem;
+}
+.footer-card:last-child {
+  margin-bottom: 2.5em;
+}
+/* section 2 footer */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-bottom img {
+  margin: 4em 0 2em 0;
+}
+.footer-bottom p {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #858585;
+  text-align: center;
+}
+.last-line {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #858585;
+  text-align: center;
+  padding-top: .5rem;
+
+}
+.last-line span {
+  color: black;
+  font-weight: 600;
+  text-decoration: underline;
+}
