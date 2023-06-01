@@ -1,0 +1,50 @@
+.subtitle{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.09em;
+    margin-bottom: .5em;
+    margin-top: 3em;
+    text-align: center;
+    color: var(--gold);
+}
+.title{
+    text-align: center;
+    margin-bottom:1em;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    cursor: pointer;
+  }
+  
+  .navbar span {
+    margin-right: 0;
+  }
+  
+  .navbar span  {
+    text-decoration: none;
+    color: var(--dark-gray-XXX);
+    font-size: 1.2rem;
+    line-height: 3;
+  }
+  
+  .navbar span:hover {
+    color: var(--gold);
+  }
+  
+  @media (min-width: 768px) {
+    .navbar {
+     flex-direction: row;
+     justify-content: center;
+    }
+    .navbar span:not(:last-child)::after {
+        content: "|";
+        margin: 0 2em;
+        color: var(--dark-gray-XXX);
+        font-weight: 100;
+      }
+  }

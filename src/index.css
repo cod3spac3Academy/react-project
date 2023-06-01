@@ -6,13 +6,17 @@
   --purple: #6f42c1;
   --pink: #d63384;
   --red: #dc3545;
+  --light-red:#C35454; /*for badge's span at discovery menu*/
   --orange: #fd7e14;
   --yellow: #ffc107;
+  --gold: #c29766; /*for discovery menu navBar*/
   --green: #198754;
   --teal: #20c997;
+  --light-green:#7ca773; /*for badge's span at discovery menu*/
   --cyan: #0dcaf0;
   --white: #fff;
   --gray: #adb5bd;
+  --dark-gray-XXX: #7f8699; /*for discovery menu navBar*/
   --light-gray-XXX:#a9abb6; /*for card-info text and border*/
   --dark: #282828;
 }
