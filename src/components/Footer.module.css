@@ -1,8 +1,6 @@
 footer{
-    width: 100vw;
-    height: 100vh;
-    /* border: .2px solid lightcoral; */
     background-color: white;
+    padding: 3em 0 4em 0;
 }
 /* section 1 footer */
 .footer-card {
@@ -69,3 +67,12 @@ footer{
   text-decoration: underline;
   text-underline-offset: 5px;
 }
+
+/* screen breakpoints */
+
+/* @media screen and (min-width: 768px) {
+  .footer-card {
+    border: 1px solid red;
+  }
+  
+} */
