@@ -1,10 +1,13 @@
-import classes from "./App.module.css";
+// import classes from "./App.module.css";
+import Header from "./components/Header/Header";
 
 const App = () => {
  
 
   return (
-    <></>
+    <>
+      <Header/>
+    </>
   );
 };
 
