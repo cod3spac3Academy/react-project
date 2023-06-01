@@ -17,7 +17,7 @@ const Slideshow = (): JSX.Element => {
     const handleClickLeft = () => {
         setCurrentIndex(currentIndex - 1);
         if (currentIndex === 0) {
-            setCurrentIndex(0);
+            setCurrentIndex(2);
         }
     }
     const handleClickRight = () => {
@@ -30,38 +30,22 @@ const Slideshow = (): JSX.Element => {
     useEffect(() => {
         const interval = setInterval(() => {
             handleClickRight();
-        }, 3000);
+        }, 5000);
         return () => clearInterval(interval);
     }, [currentIndex]);
 
     return (
         <>
             <div className={classes.slideshow}>
-                <div className={classes.slider1}>
-                    <div className={classes.sliderGeneral}>
-                        <FontAwesomeIcon icon={faArrowLeftLong} onClick={handleClickLeft}/>
-                        <div className={classes.sliderInfo}>
-                            <img className={classes.image} src={images[currentIndex]} alt={description[currentIndex]} />
-                            <h4>{description[currentIndex]}</h4>
-                            <h2>{title[currentIndex]}</h2>
-                            <button>DISCOVER MORE</button>
-                        </div>
-                        <FontAwesomeIcon icon={faArrowRightLong} onClick={handleClickRight}/>
+                <img className={classes.image} src={images[currentIndex]} alt={description[currentIndex]} />
+                <div className={classes.slider}>
+                    <FontAwesomeIcon icon={faArrowLeftLong} className={classes.arrow} onClick={handleClickLeft}/>
+                    <div className={classes.sliderInfo}>
+                        <h4>{description[currentIndex]}</h4>
+                        <h2>{title[currentIndex]}</h2>
+                        <button>DISCOVER MORE</button>
                     </div>
-                </div>
-                <div className={classes.slider2}>
-                    <FontAwesomeIcon icon={faArrowLeftLong} />
-                    <h4>OUTSTANDING DINNER</h4>
-                    <h2>DELICIOUS COOKING</h2>
-                    <button>DISCOVER MORE</button>
-                    <FontAwesomeIcon icon={faArrowRightLong} />
-                </div>
-                <div className={classes.slider3}>
-                    <FontAwesomeIcon icon={faArrowLeftLong} />
-                    <h4>WONDERFUL CUISINE</h4>
-                    <h2>AUTHENTIC KITCHEN</h2>
-                    <button>DISCOVER MORE</button>
-                    <FontAwesomeIcon icon={faArrowRightLong} />
+                    <FontAwesomeIcon icon={faArrowRightLong} className={classes.arrow} onClick={handleClickRight}/>
                 </div>
             </div>
         </>
