@@ -1,12 +1,13 @@
 import classes from "./Footer.module.css";
 import logo from "../assets/black-logo.webp";
+import background from "../assets/form-bg.webp";
 
 const Footer = () => {
   return (
     <>
-    <div>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis blanditiis quibusdam autem dolore assumenda nobis asperiores? Saepe, obcaecati magnam! Molestiae odit veniam, rerum ab similique, illum labore accusamus non eius deleniti nihil! Deleniti ducimus numquam vero fugiat quos, accusantium rerum, unde odio hic nemo, repellendus voluptas. Quam veritatis saepe id iste, laboriosam soluta commodi, ad dolorem nisi quisquam ratione voluptatum maiores earum possimus nesciunt officiis reprehenderit quasi ex optio recusandae natus. Possimus inventore iusto quas nisi, dolorum qui molestias laboriosam ab animi placeat consequuntur, vero temporibus quis in, hic nostrum odit vel rem quo distinctio. Ut doloremque sit maiores minima! Ad, consectetur debitis? Corporis quaerat exercitationem, hic minus dolorum ducimus facilis! Aliquam, ad. Asperiores dolorum neque quaerat facilis laborum omnis culpa beatae. Similique maxime eveniet dicta pariatur quae expedita voluptate quasi nostrum reiciendis, explicabo natus voluptatibus laboriosam? Consectetur ratione optio quo soluta, neque ex reprehenderit dolor cumque excepturi ipsa fuga saepe necessitatibus labore temporibus aperiam dolore dolorem odio, unde rem quasi fugit mollitia deleniti sunt. Eius, sunt! Fuga reprehenderit corporis quasi quae id dolores iure unde, alias error ipsum architecto quia laudantium vel voluptatibus ut autem vitae, illo aliquam quisquam quos magnam provident consequuntur ex. Doloremque maiores hic voluptate, tempora ducimus possimus dolore quas dolorem cumque enim nam ratione cum dolorum atque voluptatem quis voluptates aspernatur ut. Nisi soluta numquam a cumque aliquam animi dolores incidunt maxime ab sint dicta neque eius alias recusandae minus harum, in officia ipsam. Inventore dignissimos minus consequatur quae possimus? Alias impedit dolor explicabo ea inventore, vel aliquam odit? Distinctio asperiores ipsa quisquam magnam accusantium beatae corrupti obcaecati culpa provident, sapiente maxime, expedita ipsum doloremque illo unde laboriosam quaerat? Exercitationem dolorem eius in ullam vel illo sit odit iste libero, omnis magnam perspiciatis tenetur dolores fugiat molestias expedita repellat voluptate cumque quibusdam, nobis excepturi dolor deserunt voluptatibus magni! Ipsum, mollitia fugiat. Quis, nulla! Ea, facilis deleniti, minus voluptatum eos, velit totam est dolore dicta porro veritatis non tenetur repudiandae dolorum necessitatibus obcaecati atque eligendi maiores fuga! Quae dignissimos quos non officia autem, adipisci praesentium. Beatae magni, eius, atque, vero exercitationem nihil facere tenetur temporibus animi suscipit modi vel officiis ea perferendis maxime ullam magnam qui doloribus velit eum. Incidunt esse asperiores laborum quibusdam harum blanditiis rerum vel ex temporibus consequatur aspernatur ratione corrupti commodi, non, quis laudantium unde, enim dicta? Harum eaque vitae quasi qui ipsa dignissimos nihil magnam non voluptate suscipit ad id eligendi porro incidunt aperiam hic provident, explicabo ex maxime mollitia. Explicabo corporis quis laudantium a, accusamus eligendi assumenda, velit voluptate praesentium similique esse deleniti quia, tenetur dicta hic nulla quibusdam aspernatur iure temporibus maxime beatae quod. Tempora dicta laboriosam, soluta vero earum saepe quaerat ipsam quidem, adipisci cupiditate, quae deleniti tempore. Animi cupiditate ratione itaque autem esse, quos eveniet pariatur maiores architecto blanditiis consequuntur, voluptate aperiam repellat culpa earum neque veniam nesciunt assumenda! Commodi, quis! Recusandae dolores nam, praesentium iusto aliquid blanditiis eius consequuntur quod dolorum, itaque at delectus, corrupti vero perferendis voluptatem reiciendis numquam quidem accusamus vitae molestiae? Vero at eius, maiores pariatur impedit fugit id officiis et aperiam doloribus fugiat dolorem distinctio autem perferendis quaerat aut eos adipisci consequuntur illum fuga veniam nobis expedita. Suscipit, sunt doloribus. Quibusdam accusantium iusto saepe laboriosam facilis, deleniti voluptas temporibus unde adipisci labore reprehenderit quos, ipsum nihil vero itaque ea. Sint quos aspernatur tempore voluptate provident eveniet quo dicta officiis maxime hic, labore molestiae soluta est quae aliquam modi. Consectetur fugiat illo nobis nesciunt? Excepturi, veniam harum voluptatibus eius odit soluta ipsam quaerat, minus voluptas laboriosam repellat temporibus exercitationem officiis iste modi, natus qui eligendi. Beatae, molestiae expedita in nihil dicta doloribus aperiam fuga distinctio est neque itaque, laboriosam quo iusto libero iure! Dicta magni similique excepturi accusantium reprehenderit corporis quod architecto laboriosam, deleniti ea id nemo illo quasi. Dolor, error odio laborum ex aspernatur sit itaque labore autem maxime. Pariatur saepe voluptates maiores. Doloremque laboriosam odio amet explicabo beatae voluptates suscipit harum maxime cupiditate culpa molestias pariatur tempora est, eligendi assumenda, quisquam, facilis cum quidem dicta! Delectus cupiditate pariatur temporibus, incidunt sit tenetur similique distinctio natus quasi beatae, alias numquam quod corporis fugiat ea excepturi! Id quaerat beatae consequuntur? Blanditiis quisquam aut repudiandae architecto vel, similique ut error quis rerum, voluptates esse molestiae explicabo. Magni, facere similique sint dolore voluptatem doloribus, atque minus, excepturi sed nostrum esse dolor cum ipsa distinctio ex quia alias saepe. Earum, eum aliquid quam, dolore facilis eius impedit, ad et aut voluptates blanditiis cum quisquam suscipit? Quaerat, molestias quasi. Aperiam quaerat ratione mollitia nobis earum iure repellat sint odio, non cumque alias temporibus a, velit, distinctio ea ducimus voluptas architecto perferendis corporis voluptatem saepe. Debitis quibusdam perferendis asperiores maxime tempore repellat fuga eos deserunt tenetur voluptatem! Maxime sint eos enim dicta eius repellendus veritatis ullam illum provident sed reprehenderit molestias molestiae accusamus harum perspiciatis quae, voluptates doloribus dolorem maiores ipsa repudiandae eligendi ab quod minima? Magnam, illo. Deserunt natus impedit provident placeat id, saepe rerum nemo cupiditate repellendus repudiandae consequatur, nesciunt quae temporibus incidunt sed sapiente dolore obcaecati fugiat rem in numquam soluta possimus? Harum, aperiam atque ex cumque impedit molestias debitis officia, voluptatibus deleniti tempore quasi at cum accusamus maiores modi! Deserunt blanditiis eius omnis atque accusantium quod repudiandae asperiores eum placeat? Itaque ipsa rem animi quia aliquid at placeat libero qui, aut, molestias soluta doloribus! Dolores corporis eaque temporibus a nam praesentium architecto magni explicabo accusantium rem! Quia, delectus tenetur? Amet perspiciatis, excepturi, explicabo, necessitatibus magni fugit at sint consequuntur minus minima ad numquam. Tempore praesentium mollitia labore iure! Odit eligendi, magni tempore veritatis a reiciendis adipisci amet officiis, velit sit praesentium ullam. Voluptatum ipsum expedita praesentium. Ullam nostrum possimus, tenetur assumenda iusto ut dolorem laboriosam culpa neque fuga eos quo quaerat illo dolores officia quod magnam obcaecati repudiandae maiores ab! Repellat sequi accusamus vero iure veniam, reiciendis corporis maxime molestiae odio, dolore, quidem eveniet. Animi natus eos assumenda reprehenderit facilis ipsam laboriosam. Culpa voluptas ratione suscipit aspernatur earum quidem neque fugit, perferendis animi incidunt ea praesentium quia dolore fuga quibusdam dignissimos. Numquam, nobis ratione!</p>
-    </div>
+      <div className={classes["fondo"]}>
+        <img src={background} alt="fondo" />
+      </div>
       <footer>
         <section className={classes["footer-section1"]}>
           <div className={classes["footer-card"]}>
@@ -60,18 +61,19 @@ const Footer = () => {
           <div className={classes["footer-img"]}>
             <img src={logo} alt="logo footer" />
           </div>
-          <div className={classes["footer-text"]}>
-            <div className={classes["footer-links"]}>
-              <p>ABOUT US</p>
-              <p>MENU</p>
-              <p>GALLERY</p>
-              <p>CONTACT US</p>
-            </div>
-            <div className={classes["last-line"]}>
-              <p>
-                © 2023 LITHO IS PROUDLY POWERED BY <span>CODE SPACE</span>
-              </p>
-            </div>
+          <div className={classes["footer-links"]}>
+            <p>ABOUT US</p>
+            <p>MENU</p>
+            <p>GALLERY</p>
+            <p>CONTACT US</p>
+          </div>
+          <div className={classes["last-line"]}>
+            <p>
+              © 2023 LITHO IS PROUDLY POWERED BY{" "}
+              <span>
+                <a href="https://codespaceacademy.com/">CODE SPACE</a>
+              </span>
+            </p>
           </div>
         </section>
       </footer>
