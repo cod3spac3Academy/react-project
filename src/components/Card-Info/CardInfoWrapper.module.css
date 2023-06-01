@@ -5,20 +5,24 @@
     margin-bottom: 0.5em;
     transition: all 0.5s;
 }
-
-/* .outerCard:hover {
-    box-shadow: 0px 1px 19.98px 7.02px rgba(0, 0, 0, 0.17);
-} */
-
+.orderTwo{
+    order: 0;
+  }
 @media (min-width: 768px) {
     .outerCard {
-        /* max-width: calc(50% - 3em); */
         max-width: calc(50% - 1em);
         margin: 0 0.3em 0.5em;
     }
+    .orderTwo{
+        order: 2;
+      }
+
 }
 @media (min-width: 992px) {
     .outerCard {
         max-width: calc(33.333% - 2em);
     }
+    .orderTwo{
+        order: 0;
+      }
 }

@@ -54,11 +54,6 @@
   border-radius: 0.2rem;
   cursor: pointer;
 }
-/* .cardButton:hover {
-    background-color: var(--white);
-    color: var(--black);
-    transform-origin: 50% top;
-  } */
 .cardButton:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -80,11 +75,11 @@
 
 @media (min-width: 768px) {
   .cardContainer {
-    height: 400px; /* Adjust the desired height for desktop screens */
+    height: 400px; 
   }
 }
 @media (min-width: 992px) {
   .cardContainer {
-    height: 450px; /* Adjust the desired height for desktop screens */
+    height: 450px; 
   }
 }
