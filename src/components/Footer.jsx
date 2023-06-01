@@ -1,13 +1,9 @@
 import classes from "./Footer.module.css";
 import logo from "../assets/black-logo.webp";
-import background from "../assets/form-bg.webp";
 
 const Footer = () => {
   return (
     <>
-      <div className={classes["fondo"]}>
-        <img src={background} alt="fondo" />
-      </div>
       <footer>
         <section className={classes["footer-section1"]}>
           <div className={classes["footer-card"]}>
