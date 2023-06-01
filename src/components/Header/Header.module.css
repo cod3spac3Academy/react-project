@@ -1,0 +1,108 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.5em;
+}
+
+.logoBlack, .logoWhite {
+    width: 28%;
+}
+
+.logoWhite {
+    display: none;
+}
+
+.menuFullScreen {
+    display: none;
+}
+
+.icons {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-right: .5em;
+}
+
+.icons .menuIcon {
+    width: 25%;
+    font-size: 1.6rem;
+}
+
+.menu {
+    padding: 1em;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.menu li {
+    padding: 1em;
+}
+
+.menu li:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .logoBlack, .logoWhite {
+        width: 16%;
+    }
+
+    .icons {
+        width: 15%;
+    }
+}
+
+/* @media screen and (min-width: 992px) {
+
+} */
+
+@media screen and (min-width: 1200px) {
+    .header {
+        padding: 1.5em 3.5em;
+        background-color: transparent;
+    }
+    
+    .logoBlack, .logoWhite {
+        width: 10%;
+    }
+
+    .logoWhite {
+        display: block;
+    }
+
+    .logoBlack {
+        display: none;
+    }
+
+    .menuFullScreen {
+        display: flex;
+    }
+
+    .menuFullScreen ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menuFullScreen li {
+        color: white;
+        padding: 0 1em;
+    }
+
+    .menu, .menuIcon {
+        display: none;
+    }
+
+    .icons {
+        width: 7%;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+}
