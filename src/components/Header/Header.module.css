@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 1.5em;
+    padding: 1.7em 1.5em;
 }
 
 .logoBlack, .logoWhite {
@@ -19,6 +19,7 @@
 }
 
 .icons {
+    color: #232323;
     width: 30%;
     display: flex;
     justify-content: space-between;
@@ -29,13 +30,14 @@
 
 .icons .menuIcon {
     width: 25%;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    cursor: pointer;
 }
 
 .menu {
     width: 100%;
     background-color: white;
-    padding: 1em;
+    padding: 1em 0;
     margin-top: -.1em;
     font-size: 1.2rem;
     font-weight: 500;
@@ -53,6 +55,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .header {
+        padding: 1.5em;
+    }
+
     .logoBlack, .logoWhite {
         width: 16%;
     }
@@ -71,7 +77,7 @@
         background-color: transparent;
         position: absolute;
         z-index: 1;
-        border-bottom: .5px solid gray;
+        border-bottom: .5px solid rgba(173, 173, 173, 0.299);
     }
     
     .logoBlack, .logoWhite {
@@ -92,13 +98,11 @@
 
     .menuFullScreen ul {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .menuFullScreen li {
         color: white;
-        padding: 0 1em;
+        padding: 0 1.5em;
     }
     
     .menuFullScreen li:hover {
