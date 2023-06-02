@@ -78,8 +78,3 @@
     height: 400px; 
   }
 }
-@media (min-width: 992px) {
-  .cardContainer {
-    height: 450px; 
-  }
-}

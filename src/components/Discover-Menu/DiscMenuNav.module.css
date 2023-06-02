@@ -21,10 +21,6 @@
     cursor: pointer;
   }
   
-  .navbar span {
-    margin-right: 0;
-  }
-  
   .navbar span  {
     text-decoration: none;
     color: var(--dark-gray-XXX);

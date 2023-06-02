@@ -1,13 +1,12 @@
-import React from 'react';
 import classes from "./DiscMenuNav.module.css";
 
 
 const DiscMenuNav = ({ setSelectedMenu }) => {
-  const handleMenuClick = (menu) => {
+  const handleMenuClick = (menu) => { //to be used in DiscMenuApp.js
     setSelectedMenu(menu);
   };
   return (
-    <div>
+    <div className={classes.menuNavContainer}>
         <h5 className={classes.subtitle}>SPECIAL MENU</h5>
         <h2 className={classes.title}>DISCOVER MENU</h2>
         <div className={classes.navbar}>
