@@ -13,6 +13,7 @@ const Slideshow = (): JSX.Element => {
     const title = ["MORNING MOVEMENT", "DELICIOUS COOKING", "AUTHENTIC KITCHEN"];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentImage, setCurrentImage] = useState(false);
 
     const handleClickLeft = () => {
         setCurrentIndex(currentIndex - 1);
@@ -31,16 +32,30 @@ const Slideshow = (): JSX.Element => {
     useEffect(() => {
         const interval = setInterval(() => {
             handleClickRight();
+            setCurrentImage(true);
+            setTimeout(() => {
+                setCurrentImage(false);
+            }, 4000);
         }, 5000);
-        return () => clearInterval(interval); //  Función de desmontaje: cuando se desmonta el componente, se limpia el intervalo para que no haya fugas de memoria.
+        
+        return () => {
+            clearInterval(interval);
+        }; //  Función de desmontaje: cuando se desmonta el componente, se limpia el intervalo para que no haya fugas de memoria.
     }, [currentIndex]);
 
     return (
         <>
             <div className={classes.slideshow}>
-                <div className={classes.image}>
+                {/* {currentImage ? <img className={classes.loadedBack} src={images[currentIndex]} alt={description[currentIndex]}/> : <img className={classes.loaded} src={images[currentIndex]} alt={description[currentIndex]}/>} */}
+                {/* {currentImage ? <img className={classes.image} src={images[currentIndex]} alt={description[currentIndex]}/> : <img className={classes.imageBack} src={images[currentIndex]} alt={description[currentIndex]}/>} */}
+                {/* {currentImage ? <div className={classes.image}>
                     <img className={classes.image} src={images[currentIndex]} alt={description[currentIndex]}/>
-                </div>
+                </div> : null} */}
+                {/* { */}
+
+                {/* // currentImage && ( */}
+                {/* <div className={classes.sliderForward}> */}
+                <img className={classes.image} src={images[currentIndex]} alt={description[currentIndex]}/>
                 <div className={classes.slider}>
                     <FontAwesomeIcon icon={faArrowLeftLong} className={classes.arrow} onClick={handleClickLeft}/>
                     <div className={classes.sliderInfo}>
@@ -50,6 +65,9 @@ const Slideshow = (): JSX.Element => {
                     </div>
                     <FontAwesomeIcon icon={faArrowRightLong} className={classes.arrow} onClick={handleClickRight}/>
                 </div>
+                {/* </div> */}
+                {/* // )
+                // } */}
             </div>
         </>
     )
