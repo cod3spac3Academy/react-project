@@ -1,51 +1,23 @@
-.slideshow {
+.slidershow {
     height: 36em;
     position: relative;
     overflow: hidden;
-    /* transition: all .3 ease; */
+    display: flex;
+    justify-content: space-between;
+}
+  
+.slidershow:hover {
+    overflow: visible;
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-@keyframes slideBack {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-/* .animation {
-    animation-name: slide;
-    animation-duration: 1s;
-} */
-
-.image {
+.sliderContent {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-}
+    /* flex: 1 0 100%; */
+    flex-grow: 1; /* el 1 es el que hace que crezca*/
+    flex-shrink: 0%; /* el 0 es el que hace que no se encoja*/
+    flex-basis: 100%; /* el 100% es el que hace que ocupe el 100% del espacio*/
 
-.sliderForward {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-    animation-name: slide;
-    animation-duration: 1s;
 }
 
 .sliderBack {
@@ -58,44 +30,24 @@
     animation-duration: .5s;
 }
 
-/* .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-    transform: translateX(100%);
-} */
 
-/* 
-.loaded {
+
+.image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     z-index: -1;
-    transform: translateX(100%);
-    transition: transform .5s ease-in;
 }
 
-.loadedBack {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-    transform: translateX(0%);
-    transition: transform 1s ease-in;
-} */
-
 .slider {
+    width: 100vw;
+    height: 100%;
     color: white;
     background-color: rgba(35, 35, 35, 0.541);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 100%;
     padding: 0 1em;
 }
 
@@ -165,7 +117,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .slideshow {
+    .slidershow {
         height: 100vh;
     }
 
@@ -195,3 +147,33 @@
 
 /* @media screen and (min-width: 1400px) {
 } */
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideBack {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animation {
+    animation-name: slide;
+    animation-duration: 1s;
+}
+
+.animationBack {
+    animation-name: slideBack;
+    animation-duration: 1s;
+}
