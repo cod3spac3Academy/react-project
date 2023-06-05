@@ -3,23 +3,16 @@
   border-collapse: collapse;
   border-spacing: 0;
 }
-.tableContainer {
-  margin: 1em 0;
-  padding: 0 1em;
-}
 .customTable td {
-  padding: 1em 1em 0;
+  padding: 1em 0.5em 0;
   text-align: left;
   border-top: 0.1px solid var(--light-gray-XXX);
 }
+
 .image {
   width: 4em;
   height: 4em;
   border-radius: 50%;
-}
-td .img {
-  padding: 0;
-  align-items: baseline;
 }
 .title {
   font-size: 1.3rem;
@@ -28,16 +21,11 @@ td .img {
   text-align: left;
   color: var(--dark);
 }
-td .title {
-  padding: 0.5em;
-  padding-top: 2em;
-  padding-left: 1em;
-}
 .desc {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.8em;
-  margin-top: 1em;
+  margin: 1.5em 0 1.5em; 
   text-align: left;
   color: var(--dark-gray-XXX);
 }
@@ -64,10 +52,6 @@ td .title {
   color: var(--dark);
 }
 @media (min-width: 768px) {
-  .tableContainer {
-    margin: 1em 2em;
-    padding: 0 2em;
-  }
   .customTable td {
     padding-top: 2em;
     padding-bottom: 2em;
@@ -88,13 +72,7 @@ td .title {
 @media (min-width: 992px) {
   table {
     margin: 0 auto;
-    /* padding: 0 6%; */
     padding-left: 10%;
-  }
-  .tableContainer {
-    margin: 0 1em;
-    margin-top: 0;
-    padding: 0;
   }
   .customTable td {
     padding-top: 2em;

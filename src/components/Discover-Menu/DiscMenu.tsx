@@ -7,7 +7,6 @@ const DiscMenu = (props:any) => {
         minimumIntegerDigits: 2,
       });
   return (
-    <div className={classes.tableContainer}>
       <table className={classes.customTable}>
         <tbody>
         <tr>
@@ -27,9 +26,8 @@ const DiscMenu = (props:any) => {
             </td>
             <td className={classes.price}>${formattedPrice}</td>
           </tr>
-        </tbody>
+          </tbody>
       </table>
-    </div>
   );
 };
 

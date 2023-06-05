@@ -11,6 +11,7 @@ const DiscMenuApp: React.FC<DiscMenuAppProps> = ({ selectedMenu }) => {
   const [showAll, setFullViewMenu] = useState(false);
   const [filter, setFilter] = useState("");
 
+  // eslint-disable-next-line
   const handleFilterChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFilter(event.target.value);
   };
@@ -32,21 +33,14 @@ const DiscMenuApp: React.FC<DiscMenuAppProps> = ({ selectedMenu }) => {
   });
   const slicedData = showAll ? filteredData : filteredData.slice(0, 8); // Display all or first 8 items
 
-  const renderMenuRows = () => {
-    const rows: JSX.Element[] = [];
-    const isDesktop = window.innerWidth >= 992; // Check if the screen size is desktop
-    const columnCount = isDesktop ? 2 : 1;
-    const itemsPerColumn = Math.ceil(slicedData.length / columnCount); // Calculate the number of items per column
-
-    for (let i = 0; i < columnCount; i++) {
-      // Loop through the number of columns
-      const start = i * itemsPerColumn;
-      const end = start + itemsPerColumn;
-      const columnItems = slicedData.slice(start, end);
-
-      const columnRow = columnItems.map((row, index) => (
-        <tr key={row.id} className={index === 0 ? `${classes.firstRow}` : ""}>
-          <td key={row.id}>
+  return (
+    <div className={classes.dataContainer} data-testid="DiscMenuApp">
+      <div className={classes.rowContainer}>
+        {slicedData.map((row, index) => (
+          <div
+            key={row.id}
+            className={index === 0 ? classes.firstRow : classes.column}
+          >
             <DiscMenu
               image={row.image}
               title={row.title}
@@ -55,24 +49,9 @@ const DiscMenuApp: React.FC<DiscMenuAppProps> = ({ selectedMenu }) => {
               badge={row.badge}
               tag={row.tag}
             />
-          </td>
-        </tr>
-      ));
-      rows.push(
-        <tr key={i} className={classes.column}>
-          {columnRow}
-        </tr>
-     
-      );
-    }
-    return rows;
-  };
-
-  return (
-    <div className={classes.dataContainer} data-testid="DiscMenuApp">
-      <table className={classes.customTable}>
-        <tbody>{renderMenuRows()}</tbody>
-      </table>
+          </div>
+        ))}
+      </div>
       <button onClick={handleToggleView} className={classes.viewMenuButton}>
         {showAll ? "SHOW LESS" : "VIEW FULL MENU"}
       </button>

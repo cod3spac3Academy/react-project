@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import DiscMenuApp from "./DiscMenuApp";
 
 describe("DiscMenuApp", () => {
-  //this test is to check if the component renders
+  // This test is to check if the component renders
 
   test("renders DiscMenuApp component", () => {
     render(<DiscMenuApp />);
@@ -10,7 +10,7 @@ describe("DiscMenuApp", () => {
     expect(discMenuAppElement).toBeInTheDocument();
   });
 
-  //this test is to check if the component renders the correct text
+  // This test is to check if the component renders the correct text
 
   test("renders DiscMenuApp component", () => {
     render(<DiscMenuApp />);
