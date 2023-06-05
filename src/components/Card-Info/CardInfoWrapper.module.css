@@ -1,0 +1,28 @@
+.outerCard {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-bottom: 0.5em;
+    transition: all 0.5s;
+}
+.orderTwo{
+    order: 0;
+  }
+@media (min-width: 768px) {
+    .outerCard {
+        max-width: calc(50% - 1em);
+        margin: 0 0.3em 0.5em;
+    }
+    .orderTwo{
+        order: 2;
+      }
+
+}
+@media (min-width: 1024px) {
+    .outerCard {
+        max-width: calc(33.333% - 2em);
+    }
+    .orderTwo{
+        order: 0;
+      }
+}

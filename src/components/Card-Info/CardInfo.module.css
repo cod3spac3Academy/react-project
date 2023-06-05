@@ -1,0 +1,80 @@
+.cardContainer {
+  position: relative;
+  overflow: hidden;
+}
+.cardContainer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 98%;
+  background-color: rgba(0, 0, 0, 0.3); /* Background overlay color */
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 1.2em;
+  color: var(--white);
+}
+
+.cardText {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.2em;
+  letter-spacing: 0.1em;
+  color: var(--light-gray-XXX);
+}
+
+.cardButton {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 1.4em 2.5em;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.cardButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardButton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cardButton:disabled {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px dotted var(--light-gray-XXX);
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed; /* Disable cursor */
+}
+
+@media (min-width: 768px) {
+  .cardContainer {
+    height: 400px; 
+  }
+}

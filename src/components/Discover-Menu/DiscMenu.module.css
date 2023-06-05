@@ -1,0 +1,95 @@
+.customTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.customTable td {
+  padding: 1em 0.5em 0;
+  text-align: left;
+  border-top: 0.1px solid var(--light-gray-XXX);
+}
+
+.image {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+.title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--dark);
+}
+.desc {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8em;
+  margin: 1.5em 0 1.5em; 
+  text-align: left;
+  color: var(--dark-gray-XXX);
+}
+
+.title span {
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--white);
+  padding: 0.5em 0.8em;
+}
+.title .new {
+  background-color: var(--light-green);
+}
+
+.title .hot {
+  background-color: var(--light-red);
+}
+.price {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: right;
+  color: var(--dark);
+}
+@media (min-width: 768px) {
+  .customTable td {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  td.price {
+    text-align: right;
+    padding-right: 5em;
+  }
+  .desc {
+    margin-top: 0.5em;
+    margin-right: 5em;
+  }
+  .image {
+    width: 6em;
+    height: 6em;
+  }
+}
+@media (min-width: 992px) {
+  table {
+    margin: 0 auto;
+    padding-left: 10%;
+  }
+  .customTable td {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .desc {
+    margin-right: 0;
+  }
+  td.price {
+    text-align: right;
+    padding-right: 0;
+  }
+  td .title {
+    padding-left: 1em;
+    align-items: left;
+  }
+  td .img {
+    align-items: left;
+  }
+}
