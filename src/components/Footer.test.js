@@ -21,6 +21,12 @@ describe("Footer", () => {
   it("should render Footer component correctly for mobile", () => {
     global.innerWidth = 400;
     render(<Footer />);
+    expect(screen.getByTitle("section1")).toHaveClass("footer-section1");
+    expect(screen.getByTitle("section2")).toHaveClass("footer-section2");
+    expect(screen.getByTitle("section1")).toContainHTML("div");
+    expect(screen.getByTitle("section1").firstChild.firstChild).toContainHTML(
+      "svg"
+    );
   });
 
   it("should render Footer component correctly for tablet", () => {
