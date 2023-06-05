@@ -1,0 +1,126 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7em 1.5em;
+}
+
+.logoBlack, .logoWhite {
+    width: 28%;
+}
+
+.logoWhite {
+    display: none;
+}
+
+.menuFullScreen {
+    font-family: "Poppins", sans-serif;
+    display: none;
+}
+
+.icons {
+    color: #232323;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-right: .5em;
+}
+
+.icons .menuIcon {
+    width: 25%;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.menu {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    background-color: white;
+    padding: 1em 0;
+    margin-top: -.1em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu li {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.chevron {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 1.5em;
+    }
+
+    .logoBlack, .logoWhite {
+        width: 16%;
+    }
+
+    .icons {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        padding: 1.5em 3.5em;
+        background-color: transparent;
+        position: absolute;
+        z-index: 1;
+        border-bottom: .5px solid rgba(173, 173, 173, 0.299);
+    }
+    
+    .logoBlack, .logoWhite {
+        width: 10%;
+    }
+
+    .logoWhite {
+        display: block;
+    }
+
+    .logoBlack {
+        display: none;
+    }
+
+    .menuFullScreen {
+        display: flex;
+    }
+
+    .menuFullScreen ul {
+        display: flex;
+    }
+
+    .menuFullScreen li {
+        color: white;
+        padding: 0 1.5em;
+    }
+    
+    .menuFullScreen li:hover {
+        color: gray;
+        cursor: pointer;
+    }
+
+    .menu, .menuIcon {
+        display: none;
+    }
+
+    .icons {
+        width: 7%;
+        color: white;
+    }
+}
