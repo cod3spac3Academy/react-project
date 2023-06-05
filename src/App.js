@@ -1,7 +1,7 @@
 import classes from "./App.module.css";
 import React, { useState } from 'react';
 import CardInfoApp from "./components/Card-Info/CardInfoApp";
-import DiscMenuNav from "./components/Discover-Menu/DiscMenuNav";
+import DiscMenuHeader from "./components/Discover-Menu/DiscHeaderMenu";
 import DiscMenuApp from "./components/Discover-Menu/DiscMenuApp";
 
 
@@ -11,7 +11,7 @@ const App = () => {
   return (
     <main>
     <CardInfoApp/>
-    <DiscMenuNav setSelectedMenu={setSelectedMenu} />
+    <DiscMenuHeader setSelectedMenu={setSelectedMenu} />
     <DiscMenuApp selectedMenu={selectedMenu} />
     </main>
   );

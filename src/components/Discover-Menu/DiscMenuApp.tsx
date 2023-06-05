@@ -1,13 +1,17 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import classes from "./DiscMenuApp.module.css";
 import DiscMenu from "./DiscMenu";
 import { menu } from "../../db/menu";
 
-const DiscMenuApp = ({ selectedMenu }) => {
+interface DiscMenuAppProps {
+  selectedMenu: string;
+}
+
+const DiscMenuApp: React.FC<DiscMenuAppProps> = ({ selectedMenu }) => {
   const [showAll, setFullViewMenu] = useState(false);
   const [filter, setFilter] = useState("");
 
-  const handleFilterChange = (event) => {
+  const handleFilterChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFilter(event.target.value);
   };
 
@@ -29,18 +33,19 @@ const DiscMenuApp = ({ selectedMenu }) => {
   const slicedData = showAll ? filteredData : filteredData.slice(0, 8); // Display all or first 8 items
 
   const renderMenuRows = () => {
-    const rows = [];
+    const rows: JSX.Element[] = [];
     const isDesktop = window.innerWidth >= 992; // Check if the screen size is desktop
     const columnCount = isDesktop ? 2 : 1;
     const itemsPerColumn = Math.ceil(slicedData.length / columnCount); // Calculate the number of items per column
 
-    for (let i = 0; i < columnCount; i++) { // Loop through the number of columns
+    for (let i = 0; i < columnCount; i++) {
+      // Loop through the number of columns
       const start = i * itemsPerColumn;
       const end = start + itemsPerColumn;
       const columnItems = slicedData.slice(start, end);
 
       const columnRow = columnItems.map((row, index) => (
-        <tr key={row.id} className={index === 0 ? `${classes.firstRow}` :""}>
+        <tr key={row.id} className={index === 0 ? `${classes.firstRow}` : ""}>
           <td key={row.id}>
             <DiscMenu
               image={row.image}
@@ -57,10 +62,12 @@ const DiscMenuApp = ({ selectedMenu }) => {
         <tr key={i} className={classes.column}>
           {columnRow}
         </tr>
+     
       );
     }
     return rows;
   };
+
   return (
     <div className={classes.dataContainer} data-testid="DiscMenuApp">
       <table className={classes.customTable}>

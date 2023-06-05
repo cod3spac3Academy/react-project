@@ -1,7 +1,7 @@
 import classes from "./DiscMenu.module.css";
 
 
-const DiscMenu = (props) => {
+const DiscMenu = (props:any) => {
     //to add a 0 before the price if it is a single digit
     const formattedPrice = props.price.toLocaleString(undefined, {
         minimumIntegerDigits: 2,
