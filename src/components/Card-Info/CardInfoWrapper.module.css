@@ -18,7 +18,7 @@
       }
 
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     .outerCard {
         max-width: calc(33.333% - 2em);
     }
