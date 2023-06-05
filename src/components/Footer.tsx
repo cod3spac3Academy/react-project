@@ -1,13 +1,14 @@
 import classes from "./Footer.module.css";
-import logo from "../assets/black-logo.webp";
+import imgLogo from "../assets/black-logo.png"; 
+// para que no me dé error imgLogo, he tenido que añadir una declaración en el archivo declarations.d.ts
 
 const Footer = () => {
   return (
     <>
       <footer>
-        <section className={classes["footer-section1"]}>
+        <section title="section1" className={classes["footer-section1"]}>
           <div className={classes["footer-card"]}>
-            <svg
+            <svg data-testid="icon"
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
               viewBox="0 0 384 512"
@@ -53,9 +54,9 @@ const Footer = () => {
             <p>Lorem ipsum is simply dummy text printing</p>
           </div>
         </section>
-        <section className={classes["footer-section2"]}>
+        <section title="section2" className={classes["footer-section2"]}>
           <div className={classes["footer-img"]}>
-            <img src={logo} alt="logo footer" />
+            <img src={imgLogo} alt="logo footer" />
           </div>
           <div className={classes["footer-links"]}>
             <p>ABOUT US</p>
